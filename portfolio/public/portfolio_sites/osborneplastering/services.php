@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Plasterers Sussex ~ Osborne Plastering Eastbourne</title>
+        
+        <meta name="description" content="Osborne Plastering are professional Plasterers based in Eastbourne, East Sussex providing services to Commercial and Domestic clients" />
+        <meta name="keywords" content="Plasterers sussex, plastering eastbourne, plastering contractors"/>
+        <meta name="author" content="AWK Web Design"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="We offer a professional and friendly plastering service to private and commercial clients. All Osborne Plastering work is carried out by our own trained applicators to the highest standards. With a wealth of experience working throughout the UK and abroad you can rest assured of a high quality finish and professional service." />
+
+        <style type="text/css" media="all">@import "css/normalize.css";</style>
+        <style type="text/css" media="all">@import "css/main.css";</style>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow|Spinnaker" rel="stylesheet">
+        <link rel="icon" href="/favicon2.ico" type="image/x-icon">
+
+        <script src="jquery.js"></script>
+    </head>
+    
+    <?php
+        $link_stack = '<li><a href="index.php">Home</a></li>'.
+        '<li><a href="services.php">Services</a></li>'.
+        '<li><a href="photo_gallery.php">Photo Gallery</a></li>'.
+        '<li><a href="testimonials.php">Testimonials</a></li>'.
+        '<li><a href="videos.php">Videos</a></li>'.
+        '<li><a href="contact_us.php">Contact Us</a></li>'; 
+    
+        $social_link_stack = '<li><a href="#">Facebook</a></li>';
+            
+        $footer_only_links = '<li id="credits_footer_link"><a href="credits.php">Credits</a></li>';
+    ?>
+    
+    <body>
+        
+        <?php include 'nav.php'?>
+
+        <div id="logo_background">
+            <div id="logo_container">
+                <a href="index.php">
+                    <div id="star_8"><img src="images/star_8.png"/></div>
+                    <div id="star_7"><img src="images/star_7.png"/></div>
+                    <div id="star_6"><img src="images/star_6.png"/></div>
+                    <div id="star_5"><img src="images/star_5.png"/></div>
+                    <div id="star_4"><img src="images/star_4.png"/></div>
+                    <div id="star_3"><img src="images/star_3.png"/></div>
+                    <div id="star_2"><img src="images/star_2.png"/></div>
+                    <div id="star_1"><img src="images/star_1.png"/></div>
+                    <div id="osborne_text"><img src="images/osborne_text.png"/></div>
+                    <div id="header_watermark"><img src="images/stars_watermark.png"/></div>
+                    <div id="header_watermark_2"><img src="images/stars_watermark.png"/></div>
+                </a>
+            </div>
+                <!--Mobile picture-->
+                <div id="logo_mobile_container">
+                    <img id="logo_mobile" src="images/osborne_logo_white_bg.jpg" alt="osborne plastering logo"/>
+                </div>
+            
+                <div id="mobile_watermark">
+                    <img src="images/stars_watermark.png"/>
+                </div>
+        
+        </div>
+            <div id="sticker_1_container">
+            <div class="sticker" id="sticker_1">
+                <a href="#"><img id="sticker_1" src="images/checkatrade.jpg"/></a>
+            </div>
+            </div>
+        <div class="sticker" id="sticker_2">
+             <a href="#"><img src="images/trading_standards.jpg"/></a>
+        </div>
+        
+        
+        <div class="content_1" id="services_content"><hr class="long_hr"><br><br>
+            <h1>Services</h1>
+            <p>At Osborne Plastering Limited, we offer a full range of services including...</p> <br>
+            <div class="row">
+                
+                <div class="column">
+                    <ul>
+                        <li>&#8226; Building</li>
+                        <li>&#8226; Plastering</li>
+                        <li>&#8226; Fire and Flood Renovation</li>
+                        <li>&#8226; New Builds</li>
+                        <li>&#8226; Partition Walls</li>
+                        <li>&#8226; Basement and Cellar Conversions</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>&#8226; Extensions and Conversions</li>
+                        <li>&#8226; Garage Conversions</li>         
+                        <li>&#8226; Loft Conversions</li>
+                        <li>&#8226; Mastic Sealant</li>
+                        <li>&#8226; Refurbishments</li>
+                        <li>&#8226; Suspended Ceilings</li>
+                        <li>&#8226; Artexing</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>&#8226; Coving</li>
+                        <li>&#8226; Dry Lining</li>
+                        <li>&#8226; Flat Ceilings</li>
+                        <li>&#8226; Lime Plastering</li>
+                        <li>&#8226; Plastering</li>
+                        <li>&#8226; Rendering</li>
+                        <li>&#8226; Skimming</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>&#8226; Venetian Marble Plastering</li>
+                        <li>&#8226; K-Rend</li>
+                        <li>&#8226; Liquid Screeding</li>
+                        <li>&#8226; Pebble Dashing &amp; Rough Casting</li>
+                        <li>&#8226; Plaster Mouldings</li>
+                        <li>&#8226; Waterproof Plaster</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <?php include 'content_2.php';?>
+
+        <?php include 'logos.php';?>
+
+        <?php include 'footer.php'?>
+
+        <script src="functions.js"></script>
+
+    </body>
+</html>

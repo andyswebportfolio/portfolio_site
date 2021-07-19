@@ -1,0 +1,1559 @@
+
+/*How to use
+
+/*!!! IMPORTANT! <iframe> google maps do NOT go in a box.
+Took me forever to figure that out...
+
+/* HTML MAP
+
+<div class="fullWidth" id="[NAME OF SECTION, styled at bottom of page]">
+	<div class="equalDistanceX">
+		<div class="[box type]">
+		 [equalDistanceBox2] x2
+		 [equalDistanceBox4] x4
+		 [equalDistanceBox3] x3
+
+		 [unevenBoxSmallL]+[unevenBoxLargeR]
+		 [unevenBoxLargeL]+[unevenBoxSmallR]
+
+		 [coverViewport]
+
+		[HeaderFiller]+[headerBanner]+[headerFiller]
+			<div class="[content type]">
+			 [.boxContentText, .boxContentImage]
+				<[element]>
+
+
+
+
+/* Use equalDistanceX to set a fullWidth section inside a larger section.
+
+
+
+/* Use equalDistanceBox so set a box within it.
+
+
+
+/* Use dividingBlock to set divisions between sections.
+
+
+/* for IMAGES set #((WHATEVER ID)) img {
+	width:100%;
+} to fill box.
+
+
+/* redo the maths in ID's if you choose to.
+
+/* Toggle the guideline colors at the bottom.
+
+*/
+
+@import url("main.css");
+
+
+
+/***************************************/
+/***************************************/
+/*			BoxFactory Begins
+/***************************************/
+/***************************************/
+
+.fullWidth {
+	max-width:97.5%;
+	background-color:white;
+	opacity:1;
+	padding-left:1.25%;
+	padding-right:1.25%;
+	padding-top:25px;
+	padding-bottom:20px;
+	display:block;
+	max-height:100%;
+}
+
+
+.equalDistanceX {
+	/*testing the div*/
+	
+	background-color:red;
+	position:relative;
+
+	margin:0 auto;
+
+	/*final settings*/
+	text-align:center;
+
+
+
+}
+
+/*Types of Content in box*/
+
+
+
+.boxContentImage {
+	text-align:center;
+	/*turn this off if you don't want images centered
+	0 margin on an ID in main.css*/
+	background-color:orange;
+}
+
+.boxContentImage img {
+	width:100%;
+}
+
+.boxContentText {
+
+	font-size:1.5vw;
+	background-color:pink;
+
+}
+
+
+
+
+
+
+.equalDistanceBox2, .equalDistanceBox4, 
+.equalDistanceBox3, .equalDistanceBox5,
+.equalDistanceBox6,
+
+.unevenBoxSmallL, .unevenBoxSmallR, 
+.unevenBoxLargeL, .unevenBoxLargeR {
+	/*testing the div*/
+	display:block;
+	position:relative;
+	height:90%;
+
+	margin:0 auto;
+	top:5%;
+	background-color:yellow;
+	float:left;
+
+
+	/*colours every other inner box blue*/
+
+
+
+
+/* Width Classes (for equalDistanceBox2) - 
+SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+	padding-left:2.5%;
+	padding-right:2.5%;
+
+	/*width is minus (padding + dividing block width)*/
+	width:42.5%;
+
+
+
+}
+
+
+
+/*Override for different layout sizes*/
+
+.equalDistanceBox3 {
+	background-color:purple;
+	width:33.3%;
+	height:100%;
+	float:left;
+}
+
+.equalDistanceBox4 {
+
+	/* Width Classes - 
+SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+	padding-left:2.5%;
+	padding-right:2.5%;
+
+	/*width is 100/boxes width minus (padding + dividing block width)*/
+	width:16.25%;
+
+}
+
+.equalDistanceBox5 {
+
+	/* Width Classes - 
+SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+	padding-left:0.5%;
+	padding-right:0.5%;
+
+	/*expressed in percentage
+
+		/*padding width = (amount of boxes * (padding-left + padding right))
+		/*padding width = (5*0.5)
+		/*padding width = 2.5%
+
+		/*dividing width = (5*(boxes-1))
+		/*dividing width = (5*4)
+		/*dividing width = 20%
+
+		/*
+		/*Padding Total = 22.5%
+
+
+		/*remaining space = 100 - padding total
+		/*remaining space = 100 - 22.5
+		/*remaining space = 77.5%
+
+		/*box amount = 5
+
+		/********************************
+		/*.equalDistanceBox5 width = remaining space/box amount
+		/*.equalDistanceBox5 width = 15.5%
+		*/
+
+
+
+
+
+
+
+
+	width:15%;
+
+}
+
+.equalDistanceBox6 {
+
+	/* Width Classes - 
+SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+	padding-left:0.5%;
+	padding-right:0.5%;
+
+	/*expressed in percentage
+
+		/*padding width = (amount of boxes * (padding-left + padding right))
+		/*padding width = (6*0.5)
+		/*padding width = 3%
+
+		/*dividing width = (6*(boxes-1))
+		/*dividing width = (6*5)
+		/*dividing width = 30%
+
+		/*
+		/*Padding Total = 33%
+
+
+		/*remaining space = 100 - padding total
+		/*remaining space = 100 - 33
+		/*remaining space = 67%
+
+		/*box amount = 6
+
+		/********************************
+		/*.equalDistanceBox5 width = remaining space/box amount
+		/*.equalDistanceBox5 width = 67/6
+		/*.equalDistanceBox5 width = 11.16%
+		*/
+		width:11.16%;
+
+}
+
+.unevenBoxLargeL {
+	background-color:purple;
+	width:60%;
+	float:left;
+
+}
+
+.unevenBoxSmallR {
+	background-color:purple;
+	float:right;
+	width:30%;
+}
+
+
+.unevenBoxSmallL {
+	background-color:purple;
+	float:left;
+	width:30%;
+
+}
+
+.unevenBoxLargeR {
+	background-color:purple;
+	width:60%;
+	float:right;
+}
+
+
+.coverViewport {
+	background-color:grey;
+	height:100vh;
+	width:100vw;
+
+}
+
+
+
+.headerBanner {
+	width:80%;
+	height:100%;
+	background-color:yellow;
+	float:left;
+}
+
+.headerFiller {
+	width:10%;
+	height:100%;
+	float:left;
+	background-color:pink;
+}
+
+#headerMain {
+	display:static;
+}
+
+#headerMobile {
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*now take away optional dividing blocks */
+
+.dividingBlockY {
+	height:100%;
+	width:5%;
+	margin:0 auto;
+	background-color:green;
+	float:left;
+}
+
+.dividingBlockX {
+	height:1vw;
+	width:100%;
+
+	background-color:green;
+
+}
+
+
+
+
+/*overRide the height for each incidence seperately using ID.*/
+
+#header .equalDistanceX {
+	height:43vw;
+	margin-top:65px;
+}
+
+#stylists .equalDistanceX {
+	height:27vw;
+}
+
+#hair .equalDistanceX {
+	height:30vw;
+	min-height:30px;
+}
+
+#acupuncture .equalDistanceX {
+	height:30vw;
+	min-height:30px;
+}
+
+#contact .equalDistanceX {
+	height:44vw;
+}
+
+#nails .equalDistanceX {
+	height:30vw;
+}
+
+
+/********/
+/*Header*/
+/********/
+
+#headerMain {
+	display:initial;
+}
+
+/********/
+/**Text**/
+/********/
+
+/* Text main and Mobile, one shows big, the other shows small */
+
+.textMobile {
+	display:none;
+}
+
+#nails p {
+
+	font-size:2vw;
+
+	text-align:left;
+}
+
+
+
+
+
+
+
+/***************************************/
+/***************************************/
+/*			BoxFactory Ends
+/***************************************/
+/***************************************/
+
+
+
+
+/*toggle guideline colors*/
+
+
+.unevenBoxSmallL, .unevenBoxSmallR, 
+.unevenBoxLargeL, .unevenBoxLargeR, .boxContentImage, #boxColour, 
+.dividingBlockX, .dividingBlockY, .equalDistanceBox2, .equalDistanceBox4,
+.equalDistanceBox3,  .equalDistanceBox5, .equalDistanceBox6, 
+.equalDistanceX, .boxContentText, .coverViewport, .thirdsNoDivide,
+.headerBanner, .headerFiller {
+	background-color:transparent;
+}
+
+@media(max-width:1050px){
+
+
+
+
+/**********************************************************************
+BoxFactory Tablet
+/**********************************************************************
+
+	/*How to use
+
+	/*!!! IMPORTANT! <iframe> google maps do NOT go in a box.
+	Took me forever to figure that out...
+
+	/* HTML MAP
+
+	<div class="fullwidth" id="[NAME OF SECTION, styled at bottom of page]">
+		<div class="equalDistanceX">
+			<div class="[box type]">
+			 [equalDistanceBox2] x2
+			 [equalDistanceBox4] x4
+			 [equalDistanceBox3] x3
+
+			 [unevenBoxSmallL]+[unevenBoxLargeR]
+			 [unevenBoxLargeL]+[unevenBoxSmallR]
+
+			 [coverViewport]
+
+			[HeaderFiller]+[headerBanner]+[headerFiller]
+				<div class="[content type]">
+				 [.boxContentText, .boxContentImage]
+					<[element]>
+
+
+
+
+	/* Use equalDistanceX to set a fullWidth section inside a larger section.
+
+
+
+	/* Use equalDistanceBox so set a box within it.
+
+
+
+	/* Use dividingBlock to set divisions between sections.
+
+
+	/* for IMAGES set #((WHATEVER ID)) img {
+		width:100%;
+	} to fill box.
+
+
+	/* redo the maths in ID's if you choose to.
+
+	/* Toggle the guideline colors at the bottom.
+
+
+	/***************************************/
+	/***************************************/
+	/*			BoxFactory Begins
+	/***************************************/
+	/***************************************/
+
+	.fullWidth {
+
+		max-width:97.5%;
+		background-color:white;
+		opacity:1;
+		padding-left:1.25%;
+		padding-right:1.25%;
+		padding-top:25px;
+		padding-bottom:20px;
+		display:block;
+		max-height:100%;
+
+	}
+
+
+	.equalDistanceX {
+		/*testing the div*/
+		
+		background-color:red;
+		position:relative;
+
+		margin:0 auto;
+
+		/*final settings*/
+		text-align:center;
+
+
+
+	}
+
+	/*Types of Content in box*/
+	/*(image and text)*/
+
+
+
+	.boxContentImage {
+		text-align:center;
+		/*turn this off if you don't want images centered
+		0 margin on an ID in main.css*/
+		background-color:orange;
+	}
+
+	/*Adjustments for each section */
+
+		#hair .boxContentImage img {
+			margin-top:5vh;
+		}
+		#acupuncture .boxContentImage img {
+			margin-top:5vh;
+		}
+
+	.boxContentImage img {
+		width:100%;
+	}
+
+
+
+
+
+
+
+	.boxContentText p, .boxContentText {
+
+		font-size:2.5vw;
+
+	}
+
+	#nails p {
+
+		font-size:2.5vw;
+
+	}
+
+
+
+
+
+	/*font sizes for html tags */
+
+	h1 {
+		font-size:5vw;
+	}
+
+	h3 {
+		font-size:3vw;
+	}
+
+	h5 {
+		font-size:2vw;
+	}
+
+
+
+
+
+
+
+
+	.equalDistanceBox2, .equalDistanceBox4, 
+	.equalDistanceBox3, .equalDistanceBox5,
+	.equalDistanceBox6,
+
+	.unevenBoxSmallL, .unevenBoxSmallR, 
+	.unevenBoxLargeL, .unevenBoxLargeR {
+		/*testing the div*/
+		display:block;
+		position:relative;
+		height:90%;
+
+		margin:0 auto;
+		top:5%;
+		background-color:yellow;
+		float:left;
+
+
+		/*colours every other inner box blue*/
+
+
+
+
+	/* Width Classes (for equalDistanceBox2) - 
+	SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+		padding-left:2.5%;
+		padding-right:2.5%;
+
+		/*width is minus (padding + dividing block width)*/
+		width:42.5%;
+
+
+
+	}
+
+
+
+	/*Override for different layout sizes*/
+
+
+	.equalDistanceBox3 {
+		background-color:purple;
+		width:33.3%;
+		height:100%;
+		float:left;
+	}
+
+	.equalDistanceBox4 {
+
+		/* Width Classes - 
+	SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+		padding-left:0.5%;
+		padding-right:0.5%;
+
+		/*width is 100/boxes width minus (padding + dividing block width)*/
+		width:20.25%;
+
+	}
+
+	.equalDistanceBox5 {
+
+		/* Width Classes - 
+	SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+		padding-left:0.5%;
+		padding-right:0.5%;
+
+		/*expressed in percentage
+
+			/*padding width = (amount of boxes * (padding-left + padding right))
+			/*padding width = (5*0.5)
+			/*padding width = 2.5%
+
+			/*dividing width = (5*(boxes-1))
+			/*dividing width = (5*4)
+			/*dividing width = 20%
+
+			/*
+			/*Padding Total = 22.5%
+
+
+			/*remaining space = 100 - padding total
+			/*remaining space = 100 - 22.5
+			/*remaining space = 77.5%
+
+			/*box amount = 5
+
+			/********************************
+			/*.equalDistanceBox5 width = remaining space/box amount
+			/*.equalDistanceBox5 width = 15.5%
+			*/
+
+
+
+
+
+
+
+
+		width:15%;
+
+	}
+
+	.unevenBoxLargeL {
+		background-color:purple;
+		width:60%;
+		float:left;
+
+	}
+
+	.unevenBoxSmallR {
+		background-color:purple;
+		float:right;
+		width:30%;
+	}
+
+	#contact .unevenBoxSmallR {
+		background-color:purple;
+		float:right;
+		width:95%;
+	}
+
+
+	.unevenBoxSmallL {
+		background-color:purple;
+		float:left;
+		width:30%;
+
+	}
+
+	.unevenBoxLargeR {
+		background-color:purple;
+		width:60%;
+		float:right;
+	}
+
+
+	.coverViewport {
+		background-color:grey;
+		height:100vh;
+		width:100vw;
+
+	}
+
+
+
+	.headerBanner {
+		width:80%;
+		height:100%;
+		background-color:yellow;
+		float:left;
+	}
+
+	.headerFiller {
+		width:10%;
+		height:100%;
+		float:left;
+		background-color:pink;
+	}
+
+	#headerMain {
+		display:none;
+	}
+
+	#headerMobile {
+		display:static;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/*now take away optional dividing blocks */
+
+	.dividingBlockY {
+		height:100%;
+		width:5%;
+		margin:0 auto;
+		background-color:green;
+		float:left;
+	}
+
+
+
+	.dividingBlockX {
+		height:1vw;
+		width:100%;
+
+		background-color:green;
+
+	}
+
+
+
+
+	/*overRide the height for each incidence seperately using ID.*/
+
+	#header .equalDistanceX {
+		height:100vh;
+		margin-top:65px;
+	}
+
+	#stylists .equalDistanceX {
+		height:35vw;
+	}
+
+	#hair .equalDistanceX {
+		height:35vw;
+		min-height:30px;
+	}
+
+	#acupuncture .equalDistanceX {
+	height:35vw;
+	min-height:30px;
+	}
+
+	#contact .equalDistanceX {
+		height:80vw;
+	}
+
+	#contact {
+		height:165vw;
+	}
+
+	#nails .equalDistanceX {
+		height:40vw;
+	}
+
+	#stylists {
+		height:50vw;
+	}
+
+
+	/********/
+	/*Header*/
+	/********/
+
+	#headerMain {
+		display:none;
+	}
+
+	#headerMobile {
+		display:initial;
+		
+		width:55vw;
+		height:55vw;
+		min-width:500px;
+		min-height:500px;
+		margin-top:5vw;
+	}
+
+
+
+	/********/
+	/**Text**/
+	/********/
+
+	/* Text main and Mobile, one shows big, the other shows small */
+
+	.textMobile {
+		display:none;
+	}
+
+
+
+	/**************/
+	/**Background**/
+	/**************/
+
+	 	body {
+			background-image: url("../img/tabletBackground.jpg");
+			background-repeat:repeat-y;
+			background-attachment:scroll;
+			background-size:initial;
+			background-color:black;
+		}
+
+	/********/
+	/*Contact*/
+	/********/
+
+	#map {
+		clear:both;
+		width:95vw;
+	}
+
+
+
+
+	/***************************************/
+	/***************************************/
+	/*			BoxFactory Ends
+	/***************************************/
+	/***************************************/
+
+		/*****************************
+		Treatments
+		******************************/
+
+
+
+		#header1b {
+			font-size:2.4vw;
+			text-align:center;
+		}
+
+		#list {
+			font-size:2vw;
+
+			text-align:center;
+		}
+
+		.spaPackage {
+			background-color:rgba(255,255,255,0.3);
+			padding:1%;
+			margin-bottom:1%;
+			border-radius:10px;
+			height:25vw;
+
+		}
+
+		#spaMainText {
+			max-width:80%;
+			float:left;
+			text-align:left;
+			font-size:2vw;
+
+		}
+
+		.spaPicPositioner {
+			text-align:right;
+			position:relative;
+			margin-top:6vh;
+
+
+
+
+		}
+
+		#treatments h4 {
+			font-size:2.5vw;
+		}
+
+		.spaPic {
+			width:10%;
+		}
+
+		/*coloring in packages*/
+
+		#goldSpaPackage {
+			background-color:rgba(255,222,0,0.4);
+		}
+
+		#princessSpaPackage {
+			background-color:rgba(255,0,180,0.3);
+		}
+
+		#platinumSpaPackage {
+			background-color:rgba(142,142,142,0.5);
+		}
+		#diamondSpaPackage {
+			background-color:rgba(0,255,225,0.3);
+		}
+		#menSpaPackage {
+			background-color:rgba(0,0,0,0.4);
+		}
+
+
+
+
+	/*toggle guideline colors*/
+
+
+	.unevenBoxSmallL, .unevenBoxSmallR, 
+	.unevenBoxLargeL, .unevenBoxLargeR, .boxContentImage, #boxColour, 
+	.dividingBlockX, .dividingBlockY, .equalDistanceBox2, .equalDistanceBox4,
+	.equalDistanceBox3,  .equalDistanceBox5, .equalDistanceBox6, 
+	.equalDistanceX, .boxContentText, .coverViewport, .thirdsNoDivide,
+	.headerBanner, .headerFiller, 
+
+	#contact .unevenBoxSmallR {
+		background-color:transparent;
+	}
+}
+
+@media(max-width:700px){
+	@import url("main.css");
+
+	.fullWidth {
+
+		max-width:97.5%;
+		background-color:white;
+		opacity:1;
+		padding-left:1.25%;
+		padding-right:1.25%;
+		padding-top:25px;
+		padding-bottom:20px;
+		display:block;
+		max-height:100%;
+
+	}
+
+
+	.equalDistanceX {
+		/*testing the div*/
+		
+		background-color:red;
+		position:relative;
+
+		margin:0 auto;
+
+		/*final settings*/
+		text-align:center;
+
+
+
+	}
+
+	/*Types of Content in box*/
+
+
+
+	.boxContentImage {
+		text-align:center;
+		/*turn this off if you don't want images centered
+		0 margin on an ID in main.css*/
+		background-color:orange;
+	}
+
+	.boxContentImage img {
+		width:100%;
+	}
+
+
+
+	.boxContentText p, .boxContentText {
+
+		font-size:4.5vw;
+
+	}
+
+
+
+	#nails p {
+
+		font-size:4.5vw;
+
+	}
+
+	#footer .boxContentText p {
+			font-size:3vw;
+			text-align:right;
+	}
+
+
+
+	/*font sizes for html tags */
+
+	h1 {
+		font-size:7vw;
+	}
+
+	h3 {
+		font-size:5vw;
+	}
+
+	h5 {
+		font-size:4vw;
+	}
+
+
+
+
+
+
+	.equalDistanceBox2, .equalDistanceBox4, 
+	.equalDistanceBox3, .equalDistanceBox5,
+	.equalDistanceBox6,
+
+	.unevenBoxSmallL, .unevenBoxSmallR, 
+	.unevenBoxLargeL, .unevenBoxLargeR {
+		/*testing the div*/
+		display:block;
+		position:relative;
+		height:90%;
+
+		margin:0 auto;
+		top:5%;
+		background-color:yellow;
+		float:left;
+
+
+		/*colours every other inner box blue*/
+
+
+
+
+	/* Width Classes (for equalDistanceBox2) - 
+	SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+		padding-left:2.5%;
+		padding-right:2.5%;
+
+		/*width is minus (padding + dividing block width)*/
+		width:42.5%;
+
+
+
+	}
+
+
+
+
+
+	/*Override for different layout sizes*/
+
+	.equalDistanceBox3 {
+		background-color:purple;
+		width:33.3%;
+		height:100%;
+		float:left;
+	}
+
+	.equalDistanceBox4 {
+
+		/* Width Classes - 
+	SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+		padding-left:2.5%;
+		padding-right:2.5%;
+        padding-top:5%;
+        padding-bottom:45%;
+
+		/*width is 100/boxes width minus (padding + dividing block width)*/
+		width:40%;
+
+	}
+
+	.equalDistanceBox5 {
+
+		/* Width Classes - 
+	SETS AMOUNT OF BOXES FOR EACH SECTION*/
+
+		padding-left:0.5%;
+		padding-right:0.5%;
+
+		/*expressed in percentage
+
+			/*padding width = (amount of boxes * (padding-left + padding right))
+			/*padding width = (5*0.5)
+			/*padding width = 2.5%
+
+			/*dividing width = (5*(boxes-1))
+			/*dividing width = (5*4)
+			/*dividing width = 20%
+
+			/*
+			/*Padding Total = 22.5%
+
+
+			/*remaining space = 100 - padding total
+			/*remaining space = 100 - 22.5
+			/*remaining space = 77.5%
+
+			/*box amount = 5
+
+			/********************************
+			/*.equalDistanceBox5 width = remaining space/box amount
+			/*.equalDistanceBox5 width = 15.5%
+			*/
+
+
+
+
+
+
+
+
+		width:15%;
+
+	}
+
+	#stylists .equalDistanceBox5 {
+		width:46.5%;
+	}
+
+
+
+	.unevenBoxLargeL {
+		background-color:purple;
+		width:95%;
+		float:left;
+
+	}
+
+	.unevenBoxSmallR {
+		background-color:purple;
+		float:right;
+		width:95%;
+	}
+
+	#contact .unevenBoxSmallR {
+		background-color:purple;
+		float:right;
+		width:95%;
+		height:90%;
+	}
+
+
+	.unevenBoxSmallL {
+		background-color:purple;
+		float:left;
+		width:95%;
+
+	}
+
+
+
+	.unevenBoxLargeR {
+		background-color:purple;
+		width:95%;
+		float:right;
+	}
+
+	.unevenBoxLargeL, .unevenBoxSmallR,
+	.unevenBoxSmallL, .unevenBoxLargeR {
+		height:50vw;
+	} 
+
+	.unevenBoxSmallR .boxContentImage img {
+		width:50vw;
+	}
+
+
+
+
+	.coverViewport {
+		background-color:grey;
+		height:100vh;
+		width:100vw;
+
+	}
+
+
+
+	.headerBanner {
+
+		height:100vh;
+		background-color:yellow;
+		float:left;
+	}
+
+
+	.headerFiller {
+		width:10%;
+		height:100%;
+		float:left;
+		background-color:pink;
+	}
+
+	#headerMain {
+		display:static;
+	}
+
+	#headerMobile {
+		display:none;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/*now take away optional dividing blocks */
+
+	.dividingBlockY {
+		height:100%;
+		width:5%;
+		margin:0 auto;
+		background-color:green;
+		float:left;
+	}
+
+	.dividingBlockX {
+		height:1vw;
+		width:100%;
+
+		background-color:green;
+
+	}
+
+
+
+
+	/*overRide the height for each incidence seperately using ID.*/
+
+	#header .equalDistanceX {
+		height:90vh;
+		margin-top:20vh;
+	}
+
+	#stylists .equalDistanceX {
+		height:40vw;
+	}
+
+	#hair .equalDistanceX {
+		height:120vw;
+		
+	}
+
+	#acupuncture .equalDistanceX {
+		height:120vw;
+		
+	}
+
+	#contact .equalDistanceX {
+		height:150vw;
+	}
+
+
+
+	#nails .equalDistanceX {
+		height:100vw;
+	}
+
+	#stylists {
+		height:180vw;
+	}
+
+	/*#hair {
+		height:;
+	}*/
+
+	#nails {
+		height:168vw;
+	}
+
+	#contact {
+		height:250vw;
+	}
+
+
+	/********/
+	/*Header*/
+	/********/
+
+	#headerMain {
+		display:none;
+	}
+
+	#headerMobile {
+			display:initial;
+			display:initial;
+			width:55vw;
+			height:55vw;
+			min-width:50px;
+			min-height:50px;
+			margin-top:5vw;
+	}
+
+
+
+	/********/
+	/**Text**/
+	/********/
+
+	/* Text main and Mobile, one shows big, the other shows small */
+
+	.textMobile {
+		display:none;
+	}
+
+
+	/**************/
+	/**Background**/
+	/**************/
+
+	body {
+	 	background-image: url("../img/mobileBackground.jpg");
+		background-repeat:repeat-y;
+		background-attachment:scroll;
+		background-size:initial;
+		background-color:black;
+	}
+
+	/**************/
+	/**Nails**/
+	/**************/
+
+
+
+	/*************/
+	/***Prices***/
+	/***********/
+
+	.columns {
+		font-size:3.9vw;
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    -moz-column-count: 1; /* Firefox */
+	    -ms-column-count: 1;
+	    column-count: 1;
+	}
+
+	/********/
+	/*Contact*/
+	/********/
+
+	#map {
+		clear:both;
+		width:95vw;
+		height:80vw;
+
+	}
+
+	/********/
+	/*Social*/
+	/********/
+
+	#footer .social {
+		width:12.5vw;
+		text-align:center;
+		padding-left:10vw;
+		position:relative;
+		right:12.5vw;
+	}
+
+	#footer .unevenBoxSmallR {
+		height:25vw;
+	}
+
+	.social {
+		text-align:left;
+		width:15vw;
+
+	}
+
+
+
+
+
+	/***************************************/
+	/***************************************/
+	/*			BoxFactory Ends
+	/***************************************/
+	/***************************************/
+
+		/*****************************
+		Treatments
+		******************************/
+
+
+
+		#header1b {
+			font-size:4.8vw;
+			text-align:center;
+		}
+
+		#list {
+			font-size:4vw;
+
+			text-align:center;
+		}
+
+		.spaPackage {
+			background-color:rgba(255,255,255,0.3);
+			padding:1%;
+			margin-bottom:1%;
+			border-radius:10px;
+			height:85vw;
+
+		}
+
+		#spaMainText {
+			max-width:100%;
+			
+			text-align:center;
+			font-size:4vw;
+
+		}
+
+		.spaPicPositioner {
+			text-align:center;
+			width:100%;
+			position:relative;
+			margin-top:55vw;
+
+
+
+
+		}
+
+		#treatments h4 {
+			font-size:5vw;
+			text-align:center;
+		}
+
+		.spaPic {
+			width:20%;
+		}
+
+
+
+			#headerMobile {
+
+			height:75vw;
+			width:75vw;
+			max-width:95vw;
+			max-height:95vw;
+			margin-top:5vw;
+		}
+	}
+
+@media(max-width:515px) {
+	#nails {
+		height:175vw;
+	}
+}
+
+@media(max-width:450px){
+		#nails {
+		height:180vw;
+	}
+}
+
+@media(max-width:415px){
+	#nails {
+		height:195vw;
+	}
+}
+
+@media(max-width:340px){
+	#nails {
+		height:205vw;
+	}
+}
+
+@media(max-width:305px){
+	#nails {
+		height:215vw;
+	}
+}
+
+
+
+/*toggle guideline colors*/
+
+
+.unevenBoxSmallL, .unevenBoxSmallR, 
+.unevenBoxLargeL, .unevenBoxLargeR, .boxContentImage, #boxColour, 
+.dividingBlockX, .dividingBlockY, .equalDistanceBox2, .equalDistanceBox4,
+.equalDistanceBox3,  .equalDistanceBox5, .equalDistanceBox6,
+.equalDistanceX, .boxContentText, .coverViewport, .thirdsNoDivide,
+.headerBanner, .headerFiller,
+
+#contact .unevenBoxSmallR  {
+	background-color:transparent;
+}
+}
+

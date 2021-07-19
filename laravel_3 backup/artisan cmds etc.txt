@@ -1,0 +1,135 @@
+Terminal Commands - portfolio_site
+
+
+#start and stop laravel
+(navigate to it, then)
+php artisan serve —host=localhost
+
+###############
+Artisan
+###############
+
+#php artisan help (x)
+#(x) is the command you want to understand
+
+#list every command
+php artisan list
+
+################### Set up the database (after you’ve done the controller and seeder setups)
+#test database
+php artisan migrate
+
+#THEN (for the actual thing I said at the start)
+php artisan db:seed
+
+#####Use Tinker to verify that db records got in to the database (also phpmyadmin? etc?)
+
+php artisan tinker
+Course::all(); (because Course is set in controller fo index, called in the databaseSeeder.php, created in Migrations, 
+
+#view routes
+php artisan route:list
+
+#view database
+php artisan tinker
+
+ - #exit shell = (ctrl)+C
+
+#stupid inspirational thing
+
+php artisan inspire
+
+
+
+### tinker [repl] [read, eval, print, loop] [instant tester]
+
+###############
+Artisan - Making Controllers
+###############
+
+php artisan make:controller [filename]{{.php is added for you}}
+
+###############
+Artisan - Making Resource Controllers [includes CRUD]
+###############
+
+
+php artisan make:controller [filename]{{.php is added for you}} -r
+
+
+
+###############
+Artisan - Making a model, database link function(s)
+###############
+#Makes a migration of a database and model
+php artisan make:model Course -m
+
+#
+
+
+###############
+Artisan - Tinker (repl, database thing instead of phpmyadmin, pgadmin, etc.)
+###############
+#start is
+php artisan tinker
+
+###############
+Artisan - Seeder (I think It makes an easily sharable copy of your database?)
+###############
+
+php artisan make:seeder [name]
+
+
+# Navigate to it
+# cd /Users/mac/Documents/Briefcase/web_design/portfolio_site/PHP-DOCKER
+
+# Check which containers are running
+
+docker container ls
+
+
+# Check which containers exist
+
+docker container ls -a
+
+
+# Stop all containers (in directory?) (remove -d to see what’s going on)
+
+docker-compose down -d
+
+
+# Compose and start containers (in directory?) (remove -d to see what’s going on)
+
+docker-compose up -d
+
+
+#Stop all containers
+docker kill $(docker ps -q)
+
+#Start a container (s)
+docker start [container id]
+
+#nuke it (first is containers, second is images)
+#stops everything, deletes containers, deletes images
+docker kill $(docker ps -q);
+docker rm -vf $(docker ps -a -q);
+docker rmi -f $(docker images -a -q)
+
+
+#build after changing dockerfile
+#(stop it if it’s running, then)
+#Stop all containers
+docker kill $(docker ps -q)
+
+# 			(name, version) . is this place
+# docker build -t portfolio_site_1:latest .
+
+
+
+
+#make changes
+
+docker-compose build
+
+
+

@@ -1,0 +1,138 @@
+.bg-custom  {
+    background-color: black;
+    background-image: url("/assets/img/header_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+//White header background
+.bg-custom-2 {
+    background-color:rgba(255,255,255,0.5);
+    padding-top:50px;
+    padding-bottom:50px;
+    border-radius: 25px;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+//Dark half transparent words in header
+.bg-custom-3 {
+    background-color:rgba(0,0,0,0.5);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+
+//Marquee
+
+
+//String 1
+
+#marquee_inner {
+    padding:20px;
+    height:120px;
+}
+
+#marquee_inner img {
+    position:relative;
+    max-height:50%;
+    animation: mymove 20s infinite;
+    animation-timing-function: linear;
+}
+
+$wraparound: 1450px;
+
+@keyframes mymove {
+    from {right: 0px;}
+    /*Adjust left for wraparound to match left*/
+    to {right: $wraparound;}
+  }
+
+//String 2
+
+#marquee_inner_2 {
+    position:relative;
+    top:-120px;
+    padding:20px;
+    height:120px;
+}
+
+#marquee_inner_2 img {
+    position:relative;
+    max-height:50%;
+    animation: mymove_2 20s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove_2 {
+    /*Adjust left for wraparound to match right*/
+    from {left: $wraparound;}
+    to {left: 0px;}
+  }
+
+#marquee_container {
+    background-color:rgb(242, 242, 242);
+    height:90px;
+}
+
+//Nav Highlight (JS Adds and Removes it based on scroll)
+
+/* The animation code */
+
+@keyframes navAnimate {
+  from {background-color: rgba(0,255,255,0);}
+  to {background-color: rgba(0,255,255,0.8);}
+}
+
+.nav-highlight-isscrolled {
+    background-color: rgba(0,255,255,0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation: navAnimate 1s;
+}
+
+/* Stop the animation string expanding */
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
+/* Set up the custom header media queries */
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: rgba(0,255,255,0.8);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        animation: navAnimate 1s;
+    }
+
+}
+
+/* Set up the header links so it snaps correctly on click of header bar */
+
+
+
+.navbar_linkplaceholder {
+    position:relative;
+    top:-100px;
+    height:100px;
+}
+
+/* Custom Contact Text */
+
+.custom_text_1 {
+    text-align:center;
+    font-size:1.333em;
+}
+
+.spacer_1 {
+    height:200px;
+}

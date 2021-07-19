@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(e){window.onscroll=function(e){var n,a;window.scrollY>75?(n="nav-highlight-isscrolled",-1==(a=document.getElementById("mainNav")).className.split(" ").indexOf(n)&&(a.className+=" "+n)):(a=document.getElementById("mainNav")).className=a.className.replace(/\bnav-highlight-isscrolled\b/g,"")}}));

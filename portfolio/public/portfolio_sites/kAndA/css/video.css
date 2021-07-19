@@ -1,0 +1,38 @@
+/******************************/
+/*Video Page
+/******************************/
+
+#myVideo_main {
+    position: relative;
+    top: 0;
+    max-height:88vh;
+    width:100%;
+    padding-bottom:10px;
+    
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding:2.5vh;
+    border: none;
+    color: black;
+    cursor: pointer;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    text-align:center;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+#video_container {
+    text-align:center;
+}
+
+body {
+    background-color:black;
+}

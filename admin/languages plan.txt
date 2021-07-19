@@ -1,0 +1,56 @@
+
+//Can Use
+
+HTML
+CSS
+Vanilla JS
+JSON
+MySql
+PHP
+phpMyAdmin + cPanel
+Docker + Docker Compose
+NPM
+SCSS / SASS
+Bootstrap
+Composer
+Laravel
+
+
+
+//Learned but not used
+
+
+Webpack
+React.JS
+Redux
+Git / Github
+Jenkins
+
+
+// Not Used
+
+AWS 
+Kubernetes
+Node.JS (Application Build)
+OOP (JS)
+Testing and Automation Tools
+Typescript
+UX and UI Best Practices
+Understanding software design patterns
+
+Python
+C#
+Java
+golang
+Redis
+Wordpress custom theme
+Custom plugins
+Hybris or Salesforce Commerce Cloud
+Shopify + Liquid
+Magento
+Open Cart
+Typescript
+Redux
+Vue.js
+angular
+Postgresql

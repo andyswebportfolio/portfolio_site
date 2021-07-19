@@ -1,0 +1,30 @@
+1. everything in public goes in public
+
+2. go up a level, make a folder
+
+4. (compress them first as a zip folder)
+
+3. everything except the public folder, put it there
+
+5. open environment file
+
+6. make 3 changes. Add database, username and password
+(if you didn’t make one in hostinger, make one first.)
+you can update app url as well
+
+7. go to public/index.php, make 2 changes
+Register the Auto Loader
+
+(add the path for your created file that contains the laravel setup, then the rest of the existing address. Should look like this: (your file)/vendor/autoload or similar
+
+Do the same thing for line 47 (or similar) ‘run the application’
+
+
+8. Export then import your sql tables in to the host
+OR
+Use SSH Access , navigate to the folder you created with the laravel framework
+php artisan migrate
+that should copy everything for you and is easier.
+
+
+Now the site should work =D

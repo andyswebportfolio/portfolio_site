@@ -1,0 +1,56 @@
+Terminal Commands - portfolio_site
+
+
+# Navigate to it
+# cd /Users/mac/Documents/Briefcase/web_design/portfolio_site/PHP-DOCKER
+
+# Check which containers are running
+
+docker container ls
+
+
+# Check which containers exist
+
+docker container ls -a
+
+
+# Stop all containers (in directory?) (remove -d to see what’s going on)
+
+docker-compose down -d
+
+
+# Compose and start containers (in directory?) (remove -d to see what’s going on)
+
+docker-compose up -d
+
+
+#Stop all containers
+docker kill $(docker ps -q)
+
+#Start a container (s)
+docker start [container id]
+
+#nuke it (first is containers, second is images)
+#stops everything, deletes containers, deletes images
+docker kill $(docker ps -q);
+docker rm -vf $(docker ps -a -q);
+docker rmi -f $(docker images -a -q)
+
+
+#build after changing dockerfile
+#(stop it if it’s running, then)
+#Stop all containers
+docker kill $(docker ps -q)
+
+# 			(name, version) . is this place
+# docker build -t portfolio_site_1:latest .
+
+
+
+
+#make changes
+
+docker-compose build
+
+
+

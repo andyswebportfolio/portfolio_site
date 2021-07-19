@@ -1,0 +1,165 @@
+.dropdownBar {
+    background-color:#21201d;
+    width:100%;
+    position:fixed;
+    top:0px;
+    text-align:center;
+    z-index:1;
+    height:62px;
+
+
+
+
+    -moz-transition-property:visibility, opacity;
+    -webkit-transition-property:visibility, opacity;
+    -o-transition-property:visibility, opacity;
+    transition-property:visibility, opacity;
+    -ms-transition-property:visibility, opacity;
+    opacity:0;
+
+
+
+    -moz-transition-duration:0.3s;
+    -webkit-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -ms-transition-duration:0.3s;
+
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:transparent;
+    background-image:url("../icon/menuButton.png");
+    background-repeat:no-repeat;
+    color: white;
+    padding: 16px;
+    height:51px;
+    width:51px;
+
+    border-radius:50px;
+
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position:relative;
+    top:5px;
+
+    -webkit-transition-property:background-color;
+    -moz-transition-property:background-color;
+    -ms-transition-property:background-color;
+    -o-transition-property:background-color;
+    transition-property:background-color;
+
+    -moz-transition-duration:0.3s;
+    -webkit-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -ms-transition-duration:0.3s;
+
+
+
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color:rgba(255,255,255,0.5);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top:60px;
+    left:0px;
+
+    background-color:#21201d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width:100vw;
+    height:100vh;
+
+
+    
+}
+
+#navTopSpacer {
+     background-color:#21201d;
+    margin-top:5vh;
+}
+
+#myDropdown a {
+    position:relative;
+    
+
+    font-size:3.5vh;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   
+
+    text-decoration: none;
+    display: block;
+    margin-top:5vh;
+
+    color:white;
+
+    -webkit-transition-property:background-color, color;
+    -moz-transition-property:background-color, color;
+    -ms-transition-property:background-color, color;
+    -o-transition-property:background-color, color;
+    transition-property:background-color, color;
+
+    -moz-transition-duration:0.3s;
+    -webkit-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -ms-transition-duration:0.3s;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color:black;
+
+}
+
+.dropdown-content a:active {
+    background-color: #f1f1f1;
+    color:black;
+
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media(max-width:1050px){
+
+    /***************************
+    Fade Out Pt.2 of 2
+    ***************************/
+    .dropdownBar {
+        opacity:1;
+        /*switch me off for fade but button doesn't work*/
+        
+    }
+        .mainBar p { 
+            /*stops links from working in place*/
+    visibility:hidden;
+
+    }
+
+
+}

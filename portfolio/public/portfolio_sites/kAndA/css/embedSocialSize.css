@@ -1,0 +1,152 @@
+/* EmbedSocialSize.css /*
+
+
+
+
+
+/*!!! IMPORTANT! SET GALLERY BACKGROUND INSIDE THIS PLUGIN! 
+at the bottom. /*
+
+
+
+
+Counteracts embedSocials changing size, keeping it
+full size no matter how small the screen gets
+
+
+Use this iframe with your own url
+<iframe scrolling="no" id="embedSocial" src="http://embedsocial.com/facebook_album/album_photos/1063377847072976" width="100%" height="2000" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+
+for CSS use
+
+@import "boxFactory.css";
+
+for html use <link> etc
+
+
+*/
+
+
+#embedSocial {
+	height:51.4vw;
+	/*start at 20, go up in 16.5) or add 16 take away (0.5 x n)
+	basically use a 16 times table and adust slightly
+	overflow:hidden;*/
+}
+
+@media (max-width:1850px) {
+		#embedSocial {
+		height:52.5vw;
+	}
+
+	#gallery {
+	background-color:green;
+	}
+}
+
+@media (max-width:1450px) {
+		#embedSocial {
+		height:53.5vw;
+	}
+
+	#gallery {
+	background-color:orange;
+	}
+}
+
+@media (max-width:1230px) {
+		#embedSocial {
+		height:102.5vw;
+	}
+
+	#gallery {
+	background-color:purple;
+
+	}
+}
+
+@media (max-width:1000px) {
+		#embedSocial {
+		height:128vw;
+	}
+
+	#gallery {
+	background-color:yellow;
+	}
+
+
+}
+
+
+
+@media (max-width:787px) {
+			#embedSocial {
+		height:295vw;
+	}
+
+	#gallery {
+	background-color:orange;
+	}
+}
+
+@media (max-width:675px) {
+		#embedSocial {
+		max-height:295vw;
+	}
+
+	#gallery {
+	background-color:yellow;
+	}
+}
+
+@media (max-width:500px) {
+		#embedSocial {
+		height:301vw;
+	}
+
+	#gallery {
+	background-color:purple;
+	}
+
+}
+
+
+@media (max-width:400px) {
+		#embedSocial {
+		height:590vw;
+	}
+
+	#gallery {
+	background-color:purple;
+	}
+}
+
+@media (max-width:350px) {
+		#embedSocial {
+		height:594vw;
+	}
+
+	#gallery {
+	background-color:purple;
+	}
+}
+
+@media (max-width:100px) {
+		#embedSocial {
+		height:598vw;
+	}
+
+	#gallery {
+	background-color:purple;
+	}
+}
+
+
+
+#gallery {
+	background-color:white;
+}
+
+
+
+

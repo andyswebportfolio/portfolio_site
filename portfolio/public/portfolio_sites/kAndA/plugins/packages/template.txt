@@ -1,0 +1,20 @@
+<?php
+
+$goldText = 
+<p id="spaMainText>
+	&#8226; 60 Minutes Massage - Hot Stone / Relaxing / Sport / Deep Tissue / Swedish / Anti-Cellulite
+	&#8226; Individual Eyelash Extension
+	&#8226; Eyebrow Care – Shaping & Tinting
+	&#8226; Hybrid Manicure / Gel Nail Extensions
+	&#8226; Relaxing Head Massage
+	&#8226; Hair Wash, Cut, Blow Dry
+	&#8226; Sun Bed Section (5 or 10 Min. depending on skin type)
+	&#8226; Glass of Champagne/ Wine
+	&#8226; Unlimited Hot Drinks (Selection of Teas / Coffee / Hot Chocolate)
+	<br><br>
+	Time: 5.5 Hrs
+	<br><br>
+	Price: &pound;155
+</p>;
+
+?>

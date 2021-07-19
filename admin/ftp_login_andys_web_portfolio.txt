@@ -1,0 +1,13 @@
+FTP for Andy’s Web Portfolio
+
+#use IP as host in FileZilla
+FTP IP		ftp://46.17.175.202
+
+FTP username	u221194601
+FTP port	21
+Folder to upload files	public_html
+
+
+# do not use this 
+# FTP hostname	ftp://andyswebportfolio.com
+

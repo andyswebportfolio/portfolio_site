@@ -1,0 +1,184 @@
+/*****************************
+Treatments
+******************************/
+
+#treatments {
+	/*background-color:rgba(235,200,90,0.5);*/
+	color:white;
+	background-color:transparent;
+}
+
+
+#header1b {
+	font-size:3vw;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#list {
+	font-size:1.5vw;
+
+	text-align:center;
+	margin-bottom:50px;
+}
+
+.spaPackage {
+	/*background-color:rgba(255,255,255,0.3);*/
+	padding:1%;
+	
+	border-radius:10px;
+	/*max-height:90vh;
+	min-height:20vw;*/
+	margin-bottom:5vw;
+	height:24vw;
+}
+
+#spaMainText {
+	max-width:80%;
+	float:left;
+	text-align:left;
+	font-size:1.5vw;
+}
+
+.spaPicPositioner {
+	text-align:right;
+	position:relative;
+	top:-2vw;
+}
+
+.spaPic {
+	width:10%;
+		border-radius:10px;
+}
+
+.spaPackage h4 {
+	font-size:2vw;
+}
+
+
+
+/*coloring in packages*/
+
+#goldSpaPackage {
+	background-color:rgba(255,222,0,0.4);
+	height:25vw;
+}	
+
+#platinumSpaPackage {
+	background-color:rgba(142,142,142,0.5);
+	
+}
+
+#princessSpaPackage {
+	background-color:rgba(255,0,180,0.3);
+}
+
+#diamondSpaPackage {
+	background-color:rgba(0,255,225,0.3);
+}
+#menSpaPackage {
+	background-color:rgba(150,65,0,0.3);
+	height:25vw;
+}
+
+#specialSpaPackage {
+	background-color:rgba(0,0,0,0.2);
+	height:20vw;
+	box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.3), 0 6px 30px 0 rgba(255, 255, 255, 0.3);
+}
+
+.goldText {
+	color:rgba(216,168,120,1)
+}
+
+#download {
+	text-align:center;
+	background-color:rgba(255,255,255,0.5);
+}
+
+#download img {
+	height:110px;
+	width:110px;
+}
+
+
+@media(max-width:1050px) {
+	#download {
+		display:none;
+	}
+
+	#spaMainText {
+		font-size:2vw;
+	}
+	.spaPackage {
+	/*background-color:rgba(255,255,255,0.3);*/
+	padding:1%;
+	
+	border-radius:10px;
+	/*max-height:90vh;
+	min-height:20vw;*/
+	margin-bottom:5vw;
+	height:36vw;
+	}
+	#goldSpaPackage {
+		height:36vw;
+	}	
+
+	#princessSpaPackage {
+		height:34vw;
+	}
+
+	#diamondSpaPackage {
+		height:34vw;
+	}
+	#menSpaPackage {
+		height:36vw;
+	}
+	#header1b {
+		font-size:4vw;
+
+	}
+
+	#list {
+		font-size:2vw;
+
+	}
+}
+
+@media(max-width:700px) {
+	#spaMainText {
+		font-size:3.5vw;
+		max-width:100%;
+			text-align:center;
+	}
+	.spaPackage {
+	/*background-color:rgba(255,255,255,0.3);*/
+	padding:1%;
+	
+	border-radius:10px;
+	/*max-height:90vh;
+	min-height:20vw;*/
+	margin-bottom:5vw;
+	height:36vw;
+	}
+
+	.spaPicPositioner {
+	text-align:center;
+	position:relative;
+	top:-2vw;
+	}
+
+	.spaPic {
+		width:25%;
+			border-radius:10px;
+	}
+		#header1b {
+		font-size:5vw;
+
+	}
+
+	#list {
+		font-size:3vw;
+
+	}
+}
