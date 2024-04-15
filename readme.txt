@@ -1,57 +1,70 @@
-Readme
+  _                                _            _             
+ | |                              | |          | |            
+ | | __ _ _ __ ___  _ __ ______ __| | ___   ___| | _____ _ __ 
+ | |/ _` | '_ ` _ \| '_ \______/ _` |/ _ \ / __| |/ / _ \ '__|
+ | | (_| | | | | | | |_) |    | (_| | (_) | (__|   <  __/ |   
+ |_|\__,_|_| |_| |_| .__/      \__,_|\___/ \___|_|\_\___|_|   
+                   | |                                        
+                   |_|                                        
+#####
+What?
 
-The site is in the html file.
-It would normally look (and is written in the Docker Compose file as [some path, then - ./html:/var/www/html
+A LAMP stack to be used with docker as a development environment.
+A blank canvas to build on.
 
-However the only part that needs to exist is the html part itself for this dev environment. Cool!
+#####
+How?
 
-The tutorial for this came from: https://medium.com/@mikez_dg/how-to-set-up-a-simple-lamp-server-with-docker-images-in-2023-9b0e24476ec6
+# Known Prerequisites:
+# Docker Installed
 
+# Pull from GitHub
+# Delete the git file and the readme
 
-This is your blank canvas.
-Just build something.
+Recommended:
+# Update versions of the programs used in the Docker Compose File
 
+#####################
 
+# Start Docker itself
+# Run Docker Compose in Terminal
+# Use: docker-compose up -d 
+(use of -d to detach allows you to continue to use the terminal)
 
-//Start Docker
+# When finished:
+# Stop the containers with
+# docker stop $(docker ps -a -q)
+# Close Docker program
 
-Docker must be running first else it complaints about daemeons or something mental.
-Start the program using the GUI
+# To View:
+# Docker container ls
 
-
-//Run Docker Compose in Terminal
-
-
-Start Docker Compose Containers with
-docker-compose up -d (use -d to detach and allow you to continue to use the terminal)
+#####################
 
 #########
+Services
 
-Connection Details when Running
+//phpMyAdmin
 
 http://localhost:8080 is for phpMyAdmin
 User = root
 Password = root_password (possible the same as SQL database(?)
 
-http://localhost is for the site itself
 
-#########
+//Web Root
 
-//Stop it when you're done
+http://localhost
 
+#####
+Who?
 
-Stop the containers with
-docker stop $(docker ps -a -q)
+The original tutorial for this build came from: https://medium.com/@mikez_dg/how-to-set-up-a-simple-lamp-server-with-docker-images-in-2023-9b0e24476ec6
 
-
-Have a look at what is running:
-Docker container ls
-
-(Then close the Docker Program)
+I'm Andy.
 
 
+#####
+Where?
 
-//Keep Me Updated!
+Development environment. You'll want to set up a secure environment for production, either by checking and securing this one or creating another one elsewhere.
 
-You can change the versions of the programs installed in the Dockerfile(s).
-You should always check you are on the latest stable version(s) before you install this and run it.
