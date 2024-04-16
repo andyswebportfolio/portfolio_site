@@ -398,9 +398,9 @@
             'dev_requirement' => true,
         ),
         'laravel/prompts' => array(
-            'pretty_version' => 'v0.1.18',
-            'version' => '0.1.18.0',
-            'reference' => '3b5e6b03f1f1175574b5a32331d99c9819da9848',
+            'pretty_version' => 'v0.1.19',
+            'version' => '0.1.19.0',
+            'reference' => '0ab75ac3434d9f610c5691758a6146a3d1940c18',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/prompts',
             'aliases' => array(),
