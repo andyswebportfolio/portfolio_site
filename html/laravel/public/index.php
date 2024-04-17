@@ -1,5 +1,5 @@
 <?php
-
+//It's currently bypassed.
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
