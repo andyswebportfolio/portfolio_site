@@ -38,9 +38,9 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Andy Wells</h1>
-                        <h1 class="text-white-50 mx-auto mt-2 mb-5">{Junior Developer}</h1>
-                        <h2 class=" mx-auto mt-4 mb-4" style="color: silver">Aspiring Junior Full Stack Developer<br>One to two years experience with HTML, CSS, and JS, then a big full stack project with PHP.</h2>
+                        <h1 class="mx-auto my-0 text-uppercase" style="opacity: 0.5; font-size:5vw;">Andy Wells</h1>
+                        <h1 class="text-white-50 mx-auto mt-4 mb-5">Aspiring Junior Developer</h1>
+                        <h2 class=" mx-auto mt-4 mb-4" style="color: silver; font-size:18px;">Aspiring Junior Full Stack Developer<br>Around two years experience with HTML, CSS, and JS, including a big full stack project with PHP + MySQL.<br><br>Built from scratch, framework free, with over 10,000 lines of code.</h2>
                         <a class="btn btn-primary" href="#about">Learn More</a>
                     </div>
                 </div>
@@ -60,6 +60,7 @@
                     </div>
                 </div>
                 <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+                <!-- iPad Image background created with svgbackgrounds.com -->
             </div>
         </section>
         <!-- Projects-->
@@ -67,22 +68,28 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead2.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>{{experience.("brag" --short[]);</h4>
+                            <h2 style="padding-bottom:24px;">The story so far...</h2>
                             <p class="text-black-50 mb-0">
                                 - Made £1500 in a year, building 4 brochure sites for 3 happy customers, freelance
                                 <br>
                                 - Wrote 1000's of lines of code for a full stack PHP project for eight months
                                 <br>
                                 - Landed jobs with three companies, including two international brand agencies
+                                <br>
+                                - Completed Coding Level 3 and Cyber Security Level 2 NFCE courses
                             </p>
                             <br>
-                            <h4>->list.(Technologies);</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                              </svg>
+                            <br>
+                            <br>
                             <p>While I don't claim to know everything, I would say that I am relatively comfortable working with the following tech. Always using the latest versions, of course.</p>
-                            <p class="text-black-50 mb-0">
-                                - Laravel or Codeigniter or PHP without a framework,
+                            <p class="text-black-50 mb-0" style="font-size:12px;">
+                                Laravel or Codeigniter or PHP without a framework,
                                 Model View Controller architecture,
                                 HTML,
                                 CSS and SASS,
@@ -102,9 +109,40 @@
                         </div>
                     </div>
                 </div>
+
+                
+
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/sparta.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Sparta MMA Gym</h4>
+                                    <p class="mb-0 text-white-50">My first site, it took me six months and was based on tutorials from a site called Treehouse. It used HTML, CSS and JQuery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/k_and_a.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project One Row-->
+                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/awk.png" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -118,7 +156,35 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/saxon.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project One Row-->
+                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/osborne.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Misty</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/brighter_hires.png" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -138,7 +204,7 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <h2 class="text-white mb-5">Subscribe WAS here</h2>
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -147,13 +213,7 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="I wouldn't bother honestly" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->
@@ -184,9 +244,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
+                                <h4 class="text-uppercase m-0">CV</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">(Download Button)<flag-emoji code="us"></flag-emoji></div>
                             </div>
                         </div>
                     </div>
@@ -196,19 +256,19 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="#!">andyswebportfolio@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
+                        <div class="card py-4 h-100"> 
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <h4 class="text-uppercase m-0">GitHub</h4>
                                 <hr class="my-4 mx-auto" />
                                 <div class="small text-black-50">+1 (555) 902-8832</div>
-                            </div>
-                        </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
